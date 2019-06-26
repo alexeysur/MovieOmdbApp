@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenSplash" translatesAutoresizingMaskIntoConstraints="NO" id="qJi-3b-3Nm">
+                                <rect key="frame" x="-96" y="28" width="512" height="512"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qJi-3b-3Nm" secondAttribute="height" multiplier="1:1" id="765-C4-sJm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Open Movie Database" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0xz-Gz-cVo">
+                                <rect key="frame" x="16" y="360" width="288" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0xz-Gz-cVo" secondAttribute="height" multiplier="36:7" id="1q2-Me-Nmb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.051070175750000002" blue="0.085878139709999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12334880977869034" green="0.27768272161483765" blue="0.50339251756668091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0xz-Gz-cVo" firstAttribute="top" secondItem="qJi-3b-3Nm" secondAttribute="bottom" constant="-180" id="7gX-ZC-cnL"/>
+                            <constraint firstItem="qJi-3b-3Nm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ANw-Q0-nl9"/>
+                            <constraint firstItem="0xz-Gz-cVo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KYd-DC-gs5"/>
+                            <constraint firstItem="qJi-3b-3Nm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YOP-Og-6FP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0xz-Gz-cVo" secondAttribute="trailing" constant="16" id="a6M-pz-eUK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="screenSplash" width="512" height="512"/>
+    </resources>
+</document>
